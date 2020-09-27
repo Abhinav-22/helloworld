@@ -72,7 +72,7 @@ void polyadd(struct poly a[],struct poly b[],int a_count,int b_count)
 		c[c_terms].exp=b[b_terms].exp;		
 	}
 	display(c,c_terms);
-	printf("\nenter the value of x");
+	printf("\nEnter the value of x");
 	scanf("%d",&x);
 	polyeval(c,c_terms,x);
 }
