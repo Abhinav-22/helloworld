@@ -45,18 +45,17 @@ void main()
 		printf("\nStack number 1:\t");
         if(a[atop]!=0)
 	    	display(a,&atop);
-        else
-             printf("\n");
+        
+
 		printf("\nStack number 2:\t");
         if(b[btop]!=0)
 		    display(b,&btop);
-        else
-        printf("\n");
+      
+
 		printf("\nStack number 3:\t");
         if(c[ctop]!=0)
     		display(c,&ctop);
-        else
-            printf("\n");
+     
         if(i%3==1)
         {
             if(a[atop]==0 && c[ctop]!=0)
@@ -72,13 +71,13 @@ void main()
             }
             else if(a[atop]<c[ctop])
             {
-                pop(c,&ctop);
-                push(a,&atop);
+                pop(a,&atop);
+                push(c,&ctop);
             }
             else if(a[atop]>c[ctop])
             {
-                pop(a,&atop);
-                push(c,&ctop);   
+                pop(c,&ctop);
+                push(a,&atop);   
             }
         }
         else if(i%3==2)
@@ -96,13 +95,13 @@ void main()
             }
             else if(a[atop]<b[btop])
             {
-                pop(b,&btop);
-                push(a,&atop);
+                pop(a,&atop);
+                push(b,&btop);
             }
             else if(a[atop]>b[btop])
             {
-                pop(a,&atop);
-                push(b,&btop);   
+                pop(b,&btop);
+                push(a,&atop);   
             }            
                                    
         }            
@@ -121,21 +120,15 @@ void main()
             }
             else if(b[btop]<c[ctop])
             {
-                pop(c,&ctop);
-                push(b,&btop);
+                pop(b,&btop);
+                push(c,&ctop);
             }
             else if(b[btop]>c[ctop])
             {
-                pop(b,&btop);
-                push(c,&ctop);   
+                pop(c,&ctop);
+                push(b,&btop);   
             }            
-
         }
-            
-            
-        
-
-
     }
     
 }
