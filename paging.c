@@ -1,3 +1,8 @@
+//C program to stimulate page replacement algorithm
+//FIFO
+//LRU
+//Optimal
+
 #include<stdio.h>
 #include<stdlib.h>
 int framesize,pagesize,page[30],counter=0;
